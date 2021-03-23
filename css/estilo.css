@@ -1,0 +1,284 @@
+:root{
+    --colorTurquesa: lightseagreen;
+    --colorNaranjo: darkorange;
+    --colorMorado: indigo;
+    --colorAzulOscuro: darkblue;
+    --colorVerde: chartreuse;
+}
+
+html{
+    background-color: beige;
+}
+
+body{
+    height: auto;
+    font-family: sans-serif;
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--colorMorado);
+}
+#logo{
+    width: 10%;
+    height: 100px;
+    float: left;
+    background-color: var(--colorMorado);
+    text-align: center;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+#menu{
+    width: 90%;
+    height: 100px;
+    float: left;
+    background-color: var(--colorMorado);
+    display: flex; /*permite usar el justify content*/
+    justify-content: center; /*centra sus elementos*/
+    text-align: center;
+    align-items: center;
+}
+
+#menu ul{
+    width: 100%;
+    background-color: var(--colorMorado);
+    list-style: none;
+    display: flex; /*menu en horizontal*/
+    margin: 0px;
+    padding: 10px;
+    border-radius: 35%;
+    text-align: center;
+    justify-content: center;
+}
+#menu ul li{
+    width: ;
+    background-color: var(--colorMorado);
+    border-radius: 20%;
+    
+}
+#menu ul li a{
+    background-color;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+#menu ul li a:hover{
+    cursor: pointer;
+    color: var(--colorNaranjo);
+}
+#banner{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#banner img{
+    width: 100%;
+    height: 400px;
+   
+}
+#textoBanner{
+    width: 30%;
+    position: absolute;
+    top: 30%;
+}
+#banner h3{
+    color: white;
+    text-align: center;
+}
+
+/*main*/
+main{
+    width: 100%;
+    float: left;
+    background-color: beige;
+}
+main h2{
+    text-align: ;
+}
+#ingresarNombre{
+    width: 300px;
+    height: 250px;
+    margin: 20px auto 20px auto;
+    background-color: var(--colorVerde);
+    border: 5px solid ; 
+    border-radius: 10%;
+    text-align: center;
+    padding: 20px;
+    min-width: 283px;
+    display: none;
+}
+.h1Titulo{
+    color: white;
+    text-align: center;
+    text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+}
+#txtNombre{
+    border: 5px solid var(--colorTurquesa);
+    border-radius: 10%;
+    margin: 20px;
+    color: var(--colorMorado);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.btnJugar{
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+    background-color: var(--colorTurquesa);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 5px solid var(--colorTurquesa);
+    margin: 20px;
+}
+.btnJugar:hover{
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    background-color: var(--colorNaranjo);
+    border: 5px solid var(--colorNaranjo);
+    font-size: 25px;
+}
+
+#elegirCategoria{
+    width: 400px;
+    height: 300px;
+    margin: 20px auto 20px auto;
+    background-color: var(--colorNaranjo);
+    border: 5px solid black; 
+    border-radius: 10%;
+    text-align: center;
+    
+    min-width: 283px;
+    display: none;
+    justify-content: center;
+}
+#elegirCategoria div{
+    width: 33%;
+    float: left;
+
+}
+#elegirCategoria img{
+    border-radius: 20%;
+}
+#elegirCategoria img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.categoria{
+    width: 60%;
+    height: 900px;
+    margin: 20px auto 20px auto;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10%; 
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+#naturaleza{  
+    box-shadow: 
+    0px 80px chartreuse inset;
+    display: none;
+}
+#musica{
+    box-shadow: 
+    0px 80px var(--colorTurquesa) inset;
+    display: none;
+
+}
+#historia{
+    box-shadow: 
+    0px 80px var(--colorNaranjo) inset;
+    display: none;
+}
+#resultado{
+    width: 400px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: var(--colorNaranjo);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10%;
+    display: none;
+    padding: 20px;
+}
+#rankingNaturaleza{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    background-color: var(--colorVerde);
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    border-radius: 10%;
+    display: none;
+}
+#rankingMusica{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    background-color: var(--colorTurquesa);
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    border-radius: 10%;
+    display: none;
+}
+#rankingHistoria{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    background-color: var(--colorMorado);
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    border-radius: 10%;
+    display: none;
+}
+#tabla{
+    text-align: left;
+    width: 200px;
+    background-color: white;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#tabla th, td{
+    width: 100px;
+    background-color: green;
+    border: 
+    1px solid black;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(27, 26, 24);
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+footer h3{
+    padding: 50px;
+    color: var(--colorNaranjo);
+    text-align: center;
+}
